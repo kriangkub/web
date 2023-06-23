@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form</title>
+  <style>
+    /* Style for the form container */
+    .form-container {
+      width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f5f5f5;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      font-family: Arial, sans-serif;
+    }
+    
+    .headform {
+        
+      text-align: center;
+    }
+
+    /* Style for form labels */
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    /* Style for form inputs */
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 8px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    /* Style for form button */
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    /* Style for form button on hover */
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    .submit-button {
+      display: flex;
+      justify-content: center;
+    }
+    select {
+      width: 100%;
+      padding: 8px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .submit-button input[type="submit"] {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    /* Style for form button on hover */
+    .submit-button input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2 class="headform"> Form</h2>
+    <form method="post" action="https://script.google.com/macros/s/AKfycbwJfrfUIA1kYLu77L8CXoUcBaZRiSXKu3EKksT_IRrP2KMa5FUunRsgakmgCCag1rZT0Q/exec">
+
+      <label>First:</label>
+      <input type="text" id="First" name="First" placeholder="Enter First">
+
+      <label>Second:</label>
+      <input type="text" id="Second" name="Second" placeholder="Enter Second">
+
+      <label>Third:</label>
+      <input type="text" id="Third" name="Third" placeholder="Enter Third">
+
+      <label >Fourth:</label>
+      <input type="text" id="Fourth" name="Fourth" placeholder="Enter Fourth">
+
+      <label >Fifth:</label>
+      <select name="Fifth" id="Fifth">
+        <option value="">Select name</option>
+        <option value="john">john</option>
+        <option value="jane">jane</option>
+        <option value="mark">mark</option>
+      </select>
+
+      <label >Sixth:</label>
+      <input type="text" id="Sixth" name="Sixth" placeholder="Enter Sixth">
+
+
+      <div class="submit-button">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
